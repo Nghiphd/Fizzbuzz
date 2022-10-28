@@ -1,13 +1,19 @@
 public class Fizzbuzz {
     public static void main(String args[]) {
-        fizzbuzz();
-    }
-    public int fizzbuzz(int fizz, int buzz) {
-        int i = 0;
-        buzz = 0;
-        for(fizz = 1; fizz*3 <= 100; fizz = fizz * 3) {
-            return fizz;
+        int i;
+        for(i = 1; i < 101; i++) {
+            if (i % 15 == 0) {
+                System.out.println ("FizzBuzz");
+            }
+            else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            }
+            else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            }
+            else {
+                System.out.println(i);
+            }
         }
-        return i;
     }
 }
